@@ -1,1 +1,1 @@
-console.log("Application is running")
+console.log("Application  is running")
