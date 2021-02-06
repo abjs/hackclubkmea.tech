@@ -19,10 +19,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cp /home/abjs/githubDeploy/1/.env ./      
-    - run: npm i
-    - run: pm2 restart HACK
-    
+    - name: Environment
+      run : cat /home/abjs/files/hackclubkmea.tech >> .env  
+    - name: Installing Node Dependencies    
+      run : yarn install
     
       
       
