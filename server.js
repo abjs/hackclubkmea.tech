@@ -3,7 +3,7 @@ const bodyparser = require('body-parser');
 const morgan = require("morgan");
 const app = express();
 require('dotenv').config();
-require('./helpers/init_mogodb')
+// require('./helpers/init_mogodb')
 
 const port = process.env.PORT || 3000;
 if (process.env.NODE_ENV === 'development') {
